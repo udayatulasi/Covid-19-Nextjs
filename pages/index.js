@@ -31,6 +31,7 @@ export const getStaticProps =  async ()=>{
     requriedData.name = country.name;
     if(country.flag)
     requriedData.flag = country.flag
+    requriedData.code = country.alpha2Code.toLowerCase()
 return requriedData
   })
 
