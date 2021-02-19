@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
 }));
-function navbar() {
+function navbar({children}) {
     const classes = useStyles();
     return (
         <AppBar position="sticky">
@@ -30,7 +30,9 @@ function navbar() {
     </Typography>
    <Link href="/"> 
    <Button color="inherit">Home</Button>
+   
    </Link>
+   {children}
   </Toolbar>
 </AppBar>
     )
