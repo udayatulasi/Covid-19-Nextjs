@@ -12,7 +12,7 @@ export default function Home({data}) {
         <Grid container spacing={4}>
         <Navbar />
         {data.map((country)=>{
-          return <Card country={country}/>
+          return <Card  key ={country} country={country}/>
         })}
         </Grid>
       </main>
