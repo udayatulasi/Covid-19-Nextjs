@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 
 
 export default function Country ({covidData}) {
-    console.log(covidData)
     return (
         <div>
             <Head/>
