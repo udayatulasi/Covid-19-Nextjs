@@ -12,7 +12,8 @@ import Link from "next/link"
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    // minWidth: 275,
+    maxWidth: 300
   },
   bullet: {
     display: 'inline-block',
@@ -39,7 +40,7 @@ export default function countryCard(props) {
   return (
       <Link href="/[country]" as={`/${props.country.name}`}>
          
-      <Grid item xs={6} md={4}>
+      <Grid item xs={6} md={2}>
     <Card className={classes.root} >
          <CardMedia
         className={classes.media}
